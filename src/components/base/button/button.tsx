@@ -28,7 +28,7 @@ const SButton: React.FC<ButtonProps> = ({
   return (
     <button
       className={classNames}
-      type={nativeType}
+      type={nativeType as 'button' | 'submit' | 'reset'}
       disabled={disabled}
       onClick={onClick}
     >
