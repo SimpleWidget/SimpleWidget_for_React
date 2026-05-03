@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useSelectContext } from './select';
+import { useSelectContext } from '../select/select.tsx';
 import '../../../theme/option.scss';
 
 interface OptionProps {
