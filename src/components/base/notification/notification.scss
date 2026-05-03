@@ -1,0 +1,85 @@
+.sw-notification {
+  display: flex;
+  align-items: flex-start;
+  padding: 13px 20px;
+  font-size: 14px;
+  min-width: 300px;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__message {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__close {
+    cursor: pointer;
+    opacity: 0.7;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__round {
+    border-radius: 10px;
+  }
+
+  &__default {
+    background: #f0f0f0;
+    color: #333;
+  }
+
+  &__primary {
+    background: #2d5af1;
+    color: #fff;
+  }
+
+  &__success {
+    background: #52b35e;
+    color: #fff;
+  }
+
+  &__danger {
+    background: #ff0200;
+    color: #fff;
+  }
+
+  &__warning {
+    background: #fcc202;
+    color: #333;
+  }
+
+  &__top-left {
+    top: 20px;
+    left: 20px;
+  }
+
+  &__top-right {
+    top: 20px;
+    right: 20px;
+  }
+
+  &__bottom-left {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  &__bottom-right {
+    bottom: 20px;
+    right: 20px;
+  }
+}

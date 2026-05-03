@@ -1,0 +1,19 @@
+.sw-space {
+  display: inline-flex;
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  &--small {
+    gap: 8px;
+  }
+
+  &--middle {
+    gap: 16px;
+  }
+
+  &--large {
+    gap: 24px;
+  }
+}
