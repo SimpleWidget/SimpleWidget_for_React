@@ -1,0 +1,42 @@
+.sw-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  &--fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--sw-loading-background, rgba(255, 255, 255, 0.9));
+  }
+
+  &__animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__spinner {
+    width: 30px;
+    height: 30px;
+    color: var(--sw-loading-color, #2d5af1);
+    animation: sw-rotate 1.5s linear infinite;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+@keyframes sw-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
