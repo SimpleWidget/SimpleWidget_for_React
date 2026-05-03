@@ -1,0 +1,36 @@
+.sw-form {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &-label {
+      margin-right: 12px;
+      font-size: 14px;
+      color: #333;
+      text-align: right;
+    }
+
+    &-control {
+      flex: 1;
+    }
+  }
+
+  &--label-left {
+    .sw-form__item-label {
+      text-align: left;
+    }
+  }
+
+  &--label-top {
+    .sw-form__item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .sw-form__item-label {
+      margin-bottom: 8px;
+      text-align: left;
+    }
+  }
+}

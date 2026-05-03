@@ -1,0 +1,10 @@
+.sw-infinite-scrolling {
+  overflow-y: auto;
+  height: 300px;
+
+  &__loading {
+    padding: 20px;
+    text-align: center;
+    color: #999;
+  }
+}

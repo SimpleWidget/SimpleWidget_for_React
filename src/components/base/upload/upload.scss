@@ -1,0 +1,67 @@
+.sw-upload {
+  &__input {
+    display: none;
+  }
+
+  &__trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #e8e8e8;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #2d5af1;
+    }
+  }
+
+  &__icon {
+    font-size: 32px;
+    color: #999;
+  }
+
+  &__tip {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+
+  &__remove {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+  }
+}

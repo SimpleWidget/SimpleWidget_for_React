@@ -1,0 +1,95 @@
+.sw-date-picker {
+  position: relative;
+  display: inline-block;
+
+  &__input {
+    cursor: pointer;
+  }
+
+  &__calendar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 280px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 8px;
+
+    &-btn {
+      width: 24px;
+      height: 24px;
+      border: none;
+      background: #f5f5f5;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: #e8e8e8;
+      }
+    }
+  }
+
+  &__week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 8px;
+
+    &-item {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+
+  &__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+
+  &__day {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+
+    &--other {
+      color: #e0e0e0;
+      cursor: default;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+}
