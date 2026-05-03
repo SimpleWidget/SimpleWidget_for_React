@@ -1,0 +1,32 @@
+.sw-textarea {
+  &--disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  &__inner {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    resize: vertical;
+    outline: none;
+
+    &:focus {
+      border-color: #2d5af1;
+    }
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  &__count {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+}

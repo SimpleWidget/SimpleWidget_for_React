@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import './ripple.scss';
 
-type FightingType = 'default' | 'primary' | 'success' | 'danger' | 'warning' | 'info';
+type RippleType = 'default' | 'primary' | 'success' | 'danger' | 'warning' | 'info';
 
 interface RippleProps {
   ripplesColor?: string;
   duration?: number;
-  type?: FightingType;
+  type?: RippleType;
   disabled?: boolean;
   children?: React.ReactNode;
 }
@@ -29,16 +29,16 @@ const SRipple: React.FC<RippleProps> = ({
     info: '#1d1d1f',
   };
 
-  const handleClick = (evt: React.MouseEvent) => {
+  const handleClick = (e: React.MouseEvent) => {
     if (disabled) return;
 
     const color = ripplesColor || COLOR_LIST[type] || COLOR_LIST.default;
     const rippleEl = document.createElement('span');
     rippleEl.className = 'sw-ripple__animation';
 
-    const rect = (evt.currentTarget as HTMLElement).getBoundingClientRect();
-    const x = evt.clientX - rect.left;
-    const y = evt.clientY - rect.top;
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
     rippleEl.style.left = `${x}px`;
     rippleEl.style.top = `${y}px`;
